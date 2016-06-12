@@ -27,7 +27,7 @@ import org.opencv.highgui.VideoCapture;
 
 /*
  * This code calculates eye entropy defined by Shannon's Entropy formula with the probability
-   function defined with conditional probabilities of pupil transition from region i to j.
+   function defined with a Markov Chain with conditional probabilities of pupil transition from region i to j.
  */
 public class EyeEntropy {
 	public static int[] findBounds(Mat image) { //Finds the rectangular bounds for the LEFT eye.

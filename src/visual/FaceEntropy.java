@@ -76,6 +76,7 @@ public class FaceEntropy {
 				i++;
 			}
 		}
+		vidreader.release();
 		pw.close();
 		System.out.println("FINISHED WITH "+vidFileName);
 	}

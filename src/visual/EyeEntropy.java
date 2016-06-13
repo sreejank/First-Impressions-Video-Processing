@@ -217,6 +217,7 @@ public class EyeEntropy {
 			pw.println(frameNumber+" : "+writePoint(image));
 			frameNumber++;
 		}
+		vidreader.release();
 		System.out.println("Initial data for video "+vidFileName+" created.");
 		pw.close();
 	}

@@ -146,6 +146,7 @@ public class BodyTilt {
 		}
 		System.out.println("DONE WITH "+vidFileName);
 		pw.close();
+		vidreader.release();
 	}
 	//Calculates shannon entropy.
 	public static double shannonEntropy(ArrayList<Double> values) { 
